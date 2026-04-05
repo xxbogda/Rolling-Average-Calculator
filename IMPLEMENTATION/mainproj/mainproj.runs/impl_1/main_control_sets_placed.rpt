@@ -1,0 +1,77 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat May 10 00:47:26 2025
+| Host         : DESKTOP-N9UNO1M running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
+| Design       : main
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    10 |
+| Unused register locations in slices containing registers |    22 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            2 |
+|      8 |            1 |
+|     12 |            1 |
+|    16+ |            6 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              86 |           24 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               8 |            2 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             140 |           48 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------+-----------------------------------------------------------+----------------------+------------------+----------------+
+|                Clock Signal                |                       Enable Signal                       |   Set/Reset Signal   | Slice Load Count | Bel Load Count |
++--------------------------------------------+-----------------------------------------------------------+----------------------+------------------+----------------+
+|  EXECUTION_UNIT/DATAGEN/CLKDIV/n_reg[25]_0 |                                                           |                      |                1 |              2 |
+|  EXECUTION_UNIT/SSDDEC/c1/N_reg[15]_0      |                                                           |                      |                1 |              2 |
+|  CLK_IBUF_BUFG                             | COMMAND_UNIT/E[0]                                         |                      |                2 |              8 |
+|  CLK_IBUF_BUFG                             | COMMAND_UNIT/SR_reg_0[0]                                  | RSTDEB/c2/RESET      |                6 |             12 |
+|  DATACLK                                   | LEN_IBUF[2]                                               | RSTDEB/c3/SR[0]      |                7 |             16 |
+|  DATACLK                                   | EXECUTION_UNIT/DATABUFFR/registers16[2].r2.reg2to15/E[0]  | RSTDEB/c2/Q_reg_2[0] |                6 |             16 |
+|  DATACLK                                   | EXECUTION_UNIT/DATABUFFR/registers16[5].r2.reg2to15/E[0]  | RSTDEB/c2/Q_reg_3[0] |                9 |             32 |
+|  DATACLK                                   |                                                           |                      |                6 |             36 |
+|  CLK_IBUF_BUFG                             |                                                           |                      |               16 |             54 |
+|  DATACLK                                   | EXECUTION_UNIT/DATABUFFR/registers16[13].r2.reg2to15/E[0] | RSTDEB/c2/Q_reg_1[0] |               20 |             64 |
++--------------------------------------------+-----------------------------------------------------------+----------------------+------------------+----------------+
+
+

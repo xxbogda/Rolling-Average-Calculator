@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon May 12 22:02:03 2025
+# Process ID: 10116
+# Current directory: C:/Users/Bogda/Desktop/facky/Sem2/DSD/Project/IMPLEMENTATION/mainproj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10948 C:\Users\Bogda\Desktop\facky\Sem2\DSD\Project\IMPLEMENTATION\mainproj\mainproj.xpr
+# Log file: C:/Users/Bogda/Desktop/facky/Sem2/DSD/Project/IMPLEMENTATION/mainproj/vivado.log
+# Journal file: C:/Users/Bogda/Desktop/facky/Sem2/DSD/Project/IMPLEMENTATION/mainproj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Bogda/Desktop/facky/Sem2/DSD/Project/IMPLEMENTATION/mainproj/mainproj.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Vivado/Vivado/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May 12 22:16:10 2025...
